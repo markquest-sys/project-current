@@ -1,255 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f2efe8">
 <title>PROJECT :: CURRENT — An Open Call</title>
-<meta name="description" content="An open invitation to help young people discover what they can do. Explore our Santa Clarita pilot, funding transparency, and participatory ways in.">
+<meta name="description" content="An open invitation to help young people discover what they can do. Explore our first $25,000 funding milestone and ways to participate.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg: #f2efe8;
-  --ink: #0e0e0e;
-  --muted: #605c55;
-  --rule: #c9c4b9;
-  --paper: #f8f6f1;
-  --cyan: #00a6de;
-  --lime: #c9f227;
-  --fuchsia: #e6007e;
-  --orange: #ff5500;
-  --font-display: 'Anton', Impact, sans-serif;
-  --font-sans: 'Archivo', sans-serif;
-  --font-hand: 'Caveat', cursive;
-}
-[data-theme="dark"]{
-  --bg: #10100f;
-  --ink: #f2efe8;
-  --muted: #b3ada3;
-  --rule: #353430;
-  --paper: #181817;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;transition:background 0.3s ease, color 0.3s ease}
+:root{--bg:#f2efe8;--ink:#0e0e0e;--muted:#605c55;--rule:#c9c4b9;--paper:#f8f6f1;--cyan:#00a6de;--lime:#c9f227;--pink:#e5187e;--orange:#f26b1d;--signal:linear-gradient(90deg,#f26b1d 0%,#e5187e 24%,#00a6de 55%,#58cfac 76%,#c9f227 100%)}
+html[data-theme=dark]{--bg:#10100f;--ink:#f2efe8;--muted:#b3ada3;--rule:#353430;--paper:#181817}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Archivo,Arial,sans-serif;transition:background .2s,color .2s}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.eyebrow{font-size:11px;letter-spacing:.22em;font-weight:700;text-transform:uppercase;color:var(--muted)}.display{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;line-height:.94;text-transform:uppercase;letter-spacing:-.014em}.copy{max-width:600px}.muted{color:var(--muted)}.signal{height:3px;background:var(--signal);position:relative;overflow:hidden}.signal:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.65),transparent);animation:glow 7s linear infinite}@keyframes glow{from{transform:translateX(-100%)}to{transform:translateX(100%)}}.site-head{border-bottom:1px solid var(--rule)}.head-inner{height:86px;display:flex;justify-content:space-between;align-items:center;gap:20px}.wordmark{font:400 27px/1 Anton,Impact,sans-serif;white-space:nowrap}.head-right{display:flex;align-items:center;gap:24px}.nav{display:flex;gap:24px}.nav a,.theme{font-size:11px;text-transform:uppercase;font-weight:700;letter-spacing:.14em}.theme{background:none;border:1px solid var(--rule);color:var(--ink);padding:10px 13px;min-width:72px}.hero{padding:clamp(85px,12vw,178px) 0 90px;text-align:center;position:relative;overflow:hidden}.hero .eyebrow{margin-bottom:20px}.hero h1{font-size:clamp(64px,11vw,148px);max-width:900px;margin:0 auto 36px}.hero p{font-size:clamp(18px,2.2vw,23px);line-height:1.45;max-width:640px;margin:0 auto}.hero .cta-wrap{margin:40px 0 20px}.btn{min-height:52px;display:inline-flex;align-items:center;justify-content:center;gap:32px;border:1px solid var(--ink);padding:13px 25px;background:var(--ink);color:var(--bg);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.btn.outline{background:transparent;color:var(--ink)}.hero-wave{position:absolute;width:140%;height:170px;bottom:10px;left:-20%;pointer-events:none;opacity:.8}.hero-wave path{stroke:var(--cyan);stroke-width:1.2;fill:none;stroke-dasharray:900;stroke-dashoffset:900;animation:trace 12s ease-in-out infinite alternate}@keyframes trace{50%,100%{stroke-dashoffset:0}}.hero-wave path:nth-child(2){stroke:var(--lime);opacity:.5;animation-delay:1.8s}.hero-inner{position:relative;z-index:2}.chapter{padding:110px 0;border-top:1px solid var(--rule)}.chapter-head{text-align:center;max-width:720px;margin:0 auto 52px}.chapter-head h2{font-size:clamp(45px,6vw,78px);margin:15px auto 21px}.chapter-head p{font-size:18px;line-height:1.6;margin:0 auto}.evidence{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:stretch}.photo{position:relative;min-height:410px;background:#222;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:none}.photo figcaption{position:absolute;bottom:16px;left:18px;color:white;text-shadow:0 2px 8px #000;font-size:10px;letter-spacing:.22em;text-transform:uppercase}.side-note{display:flex;flex-direction:column;justify-content:center;padding:clamp(25px,5vw,70px);background:var(--paper)}.side-note .display{font-size:clamp(37px,4.6vw,62px);margin:12px 0 22px}.side-note p{font-size:17px;margin:0}.side-note .hand{font:600 32px/1 Caveat,cursive;transform:rotate(-3deg);margin-top:35px;color:var(--ink)}.mini-arc{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--rule);padding-top:20px;margin-top:30px}.mini-arc span{font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase}.floor-box{max-width:790px;margin:0 auto;border:1px solid var(--rule);padding:clamp(24px,5vw,60px);background:var(--paper)}.floor-top{display:flex;align-items:end;justify-content:space-between;gap:20px}.floor-top .display{font-size:clamp(58px,9vw,108px)}.floor-top small{font-size:11px;letter-spacing:.15em;font-weight:700;text-transform:uppercase;color:var(--muted)}.floor-box>p{font-size:16px;max-width:520px;margin:24px 0 30px}.scenario{border-top:1px solid var(--rule);padding-top:28px}.scenario strong{font-size:13px}.amounts{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.amount{border:1px solid var(--rule);background:transparent;color:var(--ink);padding:13px 17px;font-weight:700;font-size:14px}.amount[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}.scenario label{display:flex;justify-content:space-between;gap:15px;font-size:13px;margin:18px 0 8px}input[type=range]{width:100%;accent-color:var(--cyan)}.meter{height:5px;background:var(--rule);margin:25px 0 10px;overflow:hidden}.meter div{height:100%;background:var(--signal);width:0;transition:width .2s}.scenario-output{display:flex;justify-content:space-between;align-items:baseline;gap:15px}.scenario-output b{font:40px/1 Anton,Impact,sans-serif}.caption{font-size:12px;color:var(--muted);line-height:1.55}.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.choice{border-top:1px solid var(--ink);padding-top:24px}.choice svg{width:36px;height:36px;stroke:var(--ink);fill:none;stroke-width:1.2;margin-bottom:28px}.choice h3{font:32px/1 Anton,Impact,sans-serif;text-transform:uppercase;margin:0 0 15px}.choice p{margin:0;max-width:300px;color:var(--muted)}.status{max-width:790px;margin:auto;border-top:1px solid var(--ink)}.status-row{padding:20px 0;display:flex;justify-content:space-between;gap:28px;align-items:center;border-bottom:1px solid var(--rule)}.status-row span:first-child{font-weight:700}.status-row span:last-child{font-size:13px;color:var(--muted);text-align:right}.status-note{max-width:710px;margin:26px auto 0;font-size:14px;color:var(--muted)}.contact{background:var(--paper);max-width:790px;margin:auto;padding:clamp(24px,5vw,56px);border:1px solid var(--rule)}.contact form{display:grid;gap:20px}.field{display:grid;gap:7px}.field label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.16em}.field input,.field select,.field textarea{background:var(--bg);border:1px solid var(--rule);color:var(--ink);padding:13px;width:100%;border-radius:0}.field textarea{min-height:105px}.formcols{display:grid;grid-template-columns:1fr 1fr;gap:18px}.prepared{font-size:13px;white-space:pre-wrap;border-left:2px solid var(--cyan);padding:8px 15px;color:var(--muted);display:none}.footer{border-top:1px solid var(--rule);padding:52px 0}.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:center}.footer .display{font-size:32px}.footer p{font-size:12px;margin:8px 0 0;color:var(--muted)}.footer a{font-size:12px;text-decoration:underline}.support-line{height:3px;background:var(--signal);margin-bottom:10px}.skip{position:absolute;top:-100px;left:10px;background:var(--ink);color:var(--bg);padding:8px}.skip:focus{top:8px}
+@media(max-width:800px){.nav{gap:12px}.nav a{font-size:10px}.head-right{gap:12px}.evidence{grid-template-columns:1fr}.photo{min-height:330px}.choices{grid-template-columns:1fr;gap:36px}.hero{padding-top:90px}.chapter{padding:78px 0}.side-note{padding:32px}.chapter-head{margin-bottom:36px}}
+@media(max-width:580px){.wrap{width:calc(100% - 32px)}.head-inner{height:auto;min-height:75px;flex-wrap:wrap;padding:13px 0}.wordmark{font-size:24px}.head-right{width:100%;justify-content:space-between}.nav{gap:18px}.hero h1{font-size:clamp(57px,15vw,84px)}.floor-top{align-items:start}.floor-top .display{font-size:62px}.formcols{grid-template-columns:1fr}.footer-grid{display:block}.footer-grid>div:last-child{margin-top:20px}.mini-arc span{font-size:17px}.scenario-output b{font-size:34px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
-/* Vibrant Energy Gradient Header Stripe */
-.energy-stripe{
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, var(--cyan), var(--lime), var(--orange), var(--fuchsia));
-}
-
-/* Header */
-.site-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:24px 40px;
-  border-bottom:1px solid var(--rule);
-  position:sticky;
-  top:0;
-  background:var(--bg);
-  z-index:100;
-}
-.wordmark{font-family:var(--font-display);font-size:24px;letter-spacing:1px;text-decoration:none;color:var(--ink)}
-.nav-links{display:flex;gap:24px;align-items:center}
-.nav-links a{text-decoration:none;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink)}
-.nav-links a:hover{color:var(--cyan)}
-.mode-toggle{background:none;border:1px solid var(--rule);padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer;color:var(--ink);border-radius:4px}
-.mode-toggle:hover{border-color:var(--ink)}
-
-/* Hero Section */
-.hero{
-  padding:80px 40px 60px 40px;
-  max-width:1400px;
-  margin:0 auto;
-  border-bottom:1px solid var(--rule);
-}
-.hero-tag{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:24px}
-.hero-title{font-family:var(--font-display);font-size:clamp(56px,8vw,120px);line-height:0.95;text-transform:uppercase;margin-bottom:32px;letter-spacing:-1px}
-.hero-subtitle{font-size:clamp(18px,2vw,24px);line-height:1.4;max-width:800px;color:var(--muted);margin-bottom:48px}
-
-/* Hero Grid */
-.hero-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:center;
-}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
-
-.hero-img-card{
-  background:var(--paper);
-  border:1px solid var(--rule);
-  overflow:hidden;
-  position:relative;
-}
-.hero-img-card img{
-  width:100%;
-  height:420px;
-  object-fit:cover;
-  display:block;
-}
-.img-caption{
-  padding:16px 24px;
-  font-size:12px;
-  font-weight:600;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  border-top:1px solid var(--rule);
-  display:flex;
-  justify-content:space-between;
-  color:var(--muted);
-}
-
-.hero-content-card{
-  background:var(--paper);
-  border:1px solid var(--rule);
-  padding:48px;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-.card-kicker{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:16px}
-.card-title{font-family:var(--font-display);font-size:42px;line-height:1;text-transform:uppercase;margin-bottom:24px}
-.card-text{font-size:16px;line-height:1.5;color:var(--muted);margin-bottom:32px}
-.handwritten{font-family:var(--font-hand);font-size:32px;color:var(--fuchsia);transform:rotate(-2deg);display:inline-block}
-
-/* Section Styling */
-.section{padding:80px 40px;max-width:1400px;margin:0 auto;border-bottom:1px solid var(--rule)}
-.section-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px}
-.section-title{font-family:var(--font-display);font-size:clamp(40px,6vw,80px);text-transform:uppercase;line-height:1}
-.section-tag{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
-
-/* Funding Grid */
-.funding-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-@media(max-width:900px){.funding-grid{grid-template-columns:1fr}}
-
-.metric-box{
-  background:var(--paper);
-  border:1px solid var(--rule);
-  padding:40px;
-}
-.metric-val{font-family:var(--font-display);font-size:64px;line-height:1;margin-bottom:8px;color:var(--cyan)}
-.metric-label{font-size:14px;color:var(--muted);margin-bottom:24px}
-.progress-bar{background:var(--rule);height:8px;width:100%;border-radius:4px;overflow:hidden;margin-bottom:16px}
-.progress-fill{background:var(--cyan);height:100%;width:21%}
-.progress-meta{display:flex;justify-content:space-between;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;color:var(--muted)}
-
-.allocation-table{background:var(--paper);border:1px solid var(--rule)}
-.alloc-row{display:flex;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--rule);font-size:15px;font-weight:500}
-.alloc-row:last-child{border-bottom:none}
-.alloc-target{font-family:var(--font-display);font-size:18px;color:var(--muted)}
-
-/* Footer */
-.footer{padding:60px 40px;text-align:center;font-size:13px;color:var(--muted);border-top:1px solid var(--rule)}
+/* Point Zero trust-cue strip: deliberately quiet and public-status aware */
+.partner-section{padding:clamp(54px,7vw,110px) 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.partner-inner{max-width:1100px;margin:auto}
+.partner-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(30px,6vw,90px);align-items:end;margin-bottom:clamp(32px,5vw,66px)}
+.partner-intro h2{font-family:Anton,Impact,sans-serif;font-size:clamp(45px,6.7vw,94px);line-height:.99;text-transform:uppercase;font-weight:400;margin:12px 0 0;letter-spacing:.003em}
+.partner-intro p{max-width:36rem;margin:0;color:var(--muted);font-size:clamp(16px,1.6vw,19px)}
+.partner-rail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.partner-name{min-height:110px;padding:22px 11px;display:flex;justify-content:center;align-items:center;text-align:center;font-size:clamp(13px,1.45vw,19px);line-height:1.22;font-weight:700;letter-spacing:-.025em;border-right:1px solid var(--rule)}
+.partner-name:last-child{border-right:0}.partner-caption{margin:24px 0 0;font-size:13px;color:var(--muted);line-height:1.65;max-width:70rem}
+@media(max-width:850px){.partner-intro{grid-template-columns:1fr}.partner-rail{grid-template-columns:repeat(2,minmax(0,1fr))}.partner-name{border-bottom:1px solid var(--rule)}.partner-name:nth-child(2n){border-right:0}.partner-name:last-child{grid-column:1/-1;border-bottom:0}}
 </style>
 </head>
-<body>
-
-<div class="energy-stripe"></div>
-
-<header class="site-head">
-  <a href="#" class="wordmark">PROJECT :: CURRENT</a>
-  <nav class="nav-links">
-    <a href="#purpose">Purpose</a>
-    <a href="#floor">$25K Floor</a>
-    <a href="#ways-in">Ways In</a>
-    <button class="mode-toggle" id="modeBtn" onclick="toggleMode()">Light Mode</button>
-  </nav>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="hero-tag">An Open Call · Santa Clarita · Pilot Planned for July 2027</div>
-    <h1 class="hero-title">The future is human made.</h1>
-    <p class="hero-subtitle">Young people deserve the chance to try, make, solve, and learn alongside people who know the work. That first experience can change what they believe is possible.</p>
-    
-    <div class="hero-grid">
-      <div class="hero-img-card">
-        <img src="PROJECT_CURRENT_Mentorship_UHD_3840x2160.jpg" alt="A skilled-work mentor guiding a young person using a drill at an outdoor workshop in golden-hour light">
-        <div class="img-caption">
-          <span>Real People</span>
-          <span>Real Work</span>
-        </div>
-      </div>
-      
-      <div class="hero-content-card">
-        <div>
-          <div class="card-kicker">A First Encounter</div>
-          <h2 class="card-title">Discover what you can do.</h2>
-          <p class="card-text">We are building a local skilled-work discovery pilot where curiosity becomes practice, practice becomes confidence, and confidence opens pathways.</p>
-        </div>
-        <div class="handwritten">Hands. Minds. Possibility.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="floor">
-    <div class="section-header">
-      <h2 class="section-title">The $25,000 Floor.</h2>
-      <div class="section-tag">Funding Milestone</div>
-    </div>
-    
-    <div class="funding-grid">
-      <div class="metric-box">
-        <div class="metric-val">$5,250</div>
-        <div class="metric-label">/ $25,000 Raised</div>
-        <div class="progress-bar">
-          <div class="progress-fill"></div>
-        </div>
-        <div class="progress-meta">
-          <span>21% Funded</span>
-          <span>Updated October 2026</span>
-        </div>
-      </div>
-
-      <div class="allocation-table">
-        <div class="alloc-row" style="background:var(--bg);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted)">
-          <span>Allocation Index</span>
-          <span>Target %</span>
-        </div>
-        <div class="alloc-row">
-          <span>01 // Space Lease & Setup</span>
-          <span class="alloc-target">40%</span>
-        </div>
-        <div class="alloc-row">
-          <span>02 // Professional Grade Tooling & PPE</span>
-          <span class="alloc-target">30%</span>
-        </div>
-        <div class="alloc-row">
-          <span>03 // Mentor Stipends & Curriculum</span>
-          <span class="alloc-target">20%</span>
-        </div>
-        <div class="alloc-row">
-          <span>04 // Community Launch & Outreach</span>
-          <span class="alloc-target">10%</span>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <p>© 2026 PROJECT :: CURRENT · Santa Clarita, California · All rights reserved.</p>
-</footer>
-
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a href="#top" class="wordmark">PROJECT :: CURRENT</a><div class="head-right"><nav class="nav" aria-label="Main navigation"><a href="#purpose">Purpose</a><a href="#floor">$25K Floor</a><a href="#help">Ways in</a><a href="#transparency">Open status</a></nav><button class="theme" id="theme" type="button" aria-label="Switch light and dark appearance">Dark mode</button></div></div></header><div class="support-line" aria-hidden="true"></div>
+<main id="main">
+<section class="hero" id="top"><svg class="hero-wave" viewBox="0 0 1600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M-20 130 C230 -10 360 180 570 90 S990 30 1160 100 S1440 190 1640 40"/><path d="M-20 165 C230 25 360 215 570 125 S990 65 1160 135 S1440 225 1640 75"/></svg><div class="wrap hero-inner"><div class="eyebrow">An open call · Santa Clarita · Pilot planned for July 2027</div><h1 class="display">The future is<br>human made.</h1><p>Help young people discover what they can do through real encounters with skilled work.</p><div class="cta-wrap"><a class="btn" href="#floor">Explore the first $25,000 <span aria-hidden="true">↗</span></a></div><div class="eyebrow">Discover &nbsp; · &nbsp; Develop &nbsp; · &nbsp; Connect</div></div></section>
+<section class="chapter" id="purpose"><div class="wrap"><div class="chapter-head"><div class="eyebrow">01 / Why we exist</div><h2 class="display">Potential meets possibility.</h2><p>Young people deserve the chance to try, make, solve, and learn alongside people who know the work. That first experience can change what they believe is possible.</p></div><div class="evidence"><figure class="photo" style="margin:0"><img src="PROJECT_CURRENT_Mentorship_UHD_3840x2160.jpg" alt="A skilled-work mentor guiding a young person using a drill at an outdoor workshop in golden-hour light" loading="lazy"><figcaption>Real people · Real work</figcaption></figure><div class="side-note"><div class="eyebrow">A first encounter</div><h3 class="display">Discover what you can do.</h3><p>We are building a local skilled-work discovery pilot where curiosity becomes practice, practice becomes confidence, and confidence opens pathways.</p><div class="hand">Hands. Minds. Possibility.</div></div></div><div class="mini-arc" aria-label="Program approach"><span>Discover</span><span aria-hidden="true">→</span><span>Develop</span><span aria-hidden="true">→</span><span>Connect</span></div></div></section>
+<section class="partner-section" id="partners" aria-labelledby="partner-title"><div class="wrap partner-inner">
+<div class="partner-intro"><div><div class="eyebrow">02 / People and organizations</div><h2 id="partner-title">Built through connection.</h2></div><p>Skilled-work discovery takes more than a good idea. It takes experienced people, local institutions, employers, and neighbors willing to help young people encounter real work.</p></div>
+<div class="partner-rail" aria-label="Organizations identified in the PROJECT :: CURRENT relationship network">
+<div class="partner-name">Clark<br>Construction</div><div class="partner-name">Carhartt</div><div class="partner-name">Lennox</div><div class="partner-name">Wm. S. Hart<br>School District</div><div class="partner-name">Edward Charles<br>Foundation</div>
+</div><p class="partner-caption"><strong>Relationship transparency:</strong> These organizations have been identified in PROJECT :: CURRENT’s developing relationship network. Their appearance here does not establish sponsorship, financial commitment, formal partnership, endorsement, or permission to use brand marks. Public-facing attribution should be confirmed individually before this page is published.</p>
+</div></section>
+<section class="chapter" id="floor"><div class="wrap"><div class="chapter-head"><div class="eyebrow">03 / The first step</div><h2 class="display">Help build the floor.</h2><p>Our first public funding milestone is $25,000. No one person needs to carry it. Every contribution helps us move toward the readiness needed for a responsible pilot.</p></div><div class="floor-box"><div class="floor-top"><div class="display">$25,000</div><small>Founding floor<br>First milestone, not full budget</small></div><p>Support is not measured only in dollars. Resources, introductions, and expertise can help reduce the work—and cost—of getting started.</p><div class="scenario"><div class="eyebrow">Explore the possibilities / illustration only</div><strong>What could people do together?</strong><div class="amounts" role="group" aria-label="Choose an illustrative gift per person"><button class="amount" data-amount="25" aria-pressed="false">$25</button><button class="amount" data-amount="100" aria-pressed="true">$100</button><button class="amount" data-amount="250" aria-pressed="false">$250</button><button class="amount" data-amount="1000" aria-pressed="false">$1,000</button></div><label for="people">Number of people <output id="people-count">25</output></label><input type="range" min="1" max="250" value="25" step="1" id="people"><div class="meter" aria-hidden="true"><div id="meter-fill"></div></div><div class="scenario-output"><span class="caption" id="pct">10% of founding floor</span><b id="total">$2,500</b></div><p class="caption">This explores hypothetical participation. It is not a live amount raised, payment flow, or pledge record.</p></div><a class="btn" href="#contact">Offer support <span aria-hidden="true">↗</span></a></div></div></section>
+<section class="chapter" id="help"><div class="wrap"><div class="chapter-head"><div class="eyebrow">04 / Ways in</div><h2 class="display">There is more than one way.</h2><p>Give what you can. Share what you know. Open a door. The most useful contribution may be the one only you can make.</p></div><div class="choices"><div class="choice"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 10h32v21H4zM4 17h32M10 25h9"/></svg><h3>Contribute funds</h3><p>Support the first funding milestone with a gift or founding commitment.</p></div><div class="choice"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 12h22v21H9zM15 12V7h10v5M9 21h22M19 18v7"/></svg><h3>Offer resources</h3><p>Tools, materials, spaces, skilled time, and practical support can make the pilot more achievable.</p></div><div class="choice"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="10" cy="13" r="5"/><circle cx="30" cy="13" r="5"/><path d="M2 35v-8c0-8 16-8 16 0v8M22 35v-8c0-8 16-8 16 0v8M18 21l4-4M22 21l-4-4"/></svg><h3>Make a connection</h3><p>Introduce us to a practitioner, employer, organization, or person who can help move the work forward.</p></div></div></div></section>
+<section class="chapter" id="transparency"><div class="wrap"><div class="chapter-head"><div class="eyebrow">05 / Public accountability</div><h2 class="display">Open from the beginning.</h2><p>We will distinguish money received from commitments made, and actual resources from resources still needed. We will not present assumptions as achievements.</p></div><div class="status" role="table" aria-label="Public funding status"><div class="status-row" role="row"><span role="cell">Founding milestone</span><span role="cell">$25,000 target</span></div><div class="status-row" role="row"><span role="cell">Cash received</span><span role="cell">Not yet publicly verified</span></div><div class="status-row" role="row"><span role="cell">Pledges and commitments</span><span role="cell">Not yet publicly verified</span></div><div class="status-row" role="row"><span role="cell">Priority needs</span><span role="cell">Program design · Safety and readiness · Practitioner support</span></div><div class="status-row" role="row"><span role="cell">Public updates</span><span role="cell">Begin once verified records are approved</span></div></div><p class="status-note">The $25,000 founding floor is the first public milestone, not the pilot's full cost. Categories above are planning priorities, not approved line-item budgets. No unverified totals or partner commitments have been presented as facts.</p></div></section>
+<section class="chapter" id="contact"><div class="wrap"><div class="chapter-head"><div class="eyebrow">06 / Your invitation</div><h2 class="display">Help make it possible.</h2><p>The aim is not simply to raise the most money. It's to gather useful resources, build trust, and invite durable community participation—without creating unnecessary work along the way.</p></div><div class="contact"><form id="contact-form"><div class="formcols"><div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" placeholder="Your name" required></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div></div><div class="field"><label for="type">How would you like to help?</label><select id="type" name="type"><option>Contribute funds</option><option>Offer resources or expertise</option><option>Make an introduction</option><option>Start a conversation</option></select></div><div class="field"><label for="message">Anything you'd like us to know? (optional)</label><textarea id="message" name="message" placeholder="A few words are enough."></textarea></div><button type="submit" class="btn">Prepare an email <span aria-hidden="true">↗</span></button><a id="send-link" class="btn outline" href="mailto:a-p@projectcurrent.org,m-q@projectcurrent.org?subject=PROJECT%20%3A%3A%20CURRENT%20Open%20Call" style="display:none">Open email application ↗</a><div id="prepared" class="prepared" aria-live="polite"></div><p class="caption">This form does not store or submit information to a server. It prepares a message for you to review and send from your email app.</p></form></div></div></section>
+</main><footer class="footer"><div class="wrap footer-grid"><div><div class="display">PROJECT :: CURRENT</div><p>Real people. Real work. Real possibility.</p></div><div><a href="#top">Back to top ↑</a><p>Santa Clarita · July 2027 pilot planned</p></div></div></footer>
 <script>
-function toggleMode(){
-  const html = document.documentElement;
-  const btn = document.getElementById('modeBtn');
-  if(html.getAttribute('data-theme')==='light'){
-    html.setAttribute('data-theme','dark');
-    btn.textContent = 'Dark Mode';
-  } else {
-    html.setAttribute('data-theme','light');
-    btn.textContent = 'Light Mode';
-  }
-}
-</script>
-</body>
-</html>
+(()=>{'use strict';const root=document.documentElement,t=document.getElementById('theme');let saved=null;try{saved=localStorage.getItem('current-theme')}catch(e){}const mq=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;function theme(mode){root.dataset.theme=mode;t.textContent=mode==='dark'?'Light mode':'Dark mode';document.querySelector('meta[name="theme-color"]').content=mode==='dark'?'#10100f':'#f2efe8'}theme(saved==='dark'||saved==='light'?saved:mq?'dark':'light');t.onclick=()=>{let v=root.dataset.theme==='dark'?'light':'dark';theme(v);try{localStorage.setItem('current-theme',v)}catch(e){}};let amount=100;const people=document.getElementById('people'),count=document.getElementById('people-count'),total=document.getElementById('total'),pct=document.getElementById('pct'),fill=document.getElementById('meter-fill'),money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);function update(){let n=Number(people.value),sum=amount*n,percent=sum/25000*100;count.textContent=n;total.textContent=money(sum);pct.textContent=percent.toFixed(percent<10?1:0)+'% of founding floor';fill.style.width=Math.min(100,percent)+'%'}document.querySelectorAll('[data-amount]').forEach(b=>b.addEventListener('click',()=>{amount=Number(b.dataset.amount);document.querySelectorAll('[data-amount]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));update()}));people.addEventListener('input',update);update();const form=document.getElementById('contact-form'),preview=document.getElementById('prepared'),link=document.getElementById('send-link');form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const val=id=>document.getElementById(id).value.trim();const subj='PROJECT :: CURRENT — Open Call';const body=['Hello,','',"I'd like to help PROJECT :: CURRENT.",'','Name: '+val('name'),'Email: '+val('email'),'Interest: '+val('type'),'','Message: '+(val('message')||'I would like to learn more.'),'','Thank you.'].join('\n');link.href='mailto:a-p@projectcurrent.org,m-q@projectcurrent.org?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);link.style.display='inline-flex';preview.style.display='block';preview.textContent='Your message is ready. Select “Open email application” to review and send it.';link.focus()})})();
+</script></body></html>
