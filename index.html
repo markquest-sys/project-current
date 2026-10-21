@@ -1,347 +1,255 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f2efe8">
-    <title>PROJECT :: CURRENT — An Open Call</title>
-    <meta name="description" content="An open invitation to help young people discover what they can do. Explore our $25K funding milestone and physical infrastructure project in Santa Clarita.">
-    <!-- Google Fonts for Swiss International Style / High Contrast Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        bg: 'var(--bg)',
-                        ink: 'var(--ink)',
-                        muted: 'var(--muted)',
-                        rule: 'var(--rule)',
-                        paper: 'var(--paper)',
-                    },
-                    fontFamily: {
-                        sans: ['Archivo', 'sans-serif'],
-                        display: ['Anton', 'Impact', 'sans-serif'],
-                        script: ['Caveat', 'cursive'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        :root {
-            --bg: #f2efe8;
-            --ink: #0e0e0e;
-            --muted: #605c55;
-            --rule: #c9c4b9;
-            --paper: #f8f6f1;
-        }
-        [data-theme="dark"] {
-            --bg: #10100f;
-            --ink: #f2efe8;
-            --muted: #b3ada3;
-            --rule: #353430;
-            --paper: #181817;
-        }
-        body {
-            background-color: var(--bg);
-            color: var(--ink);
-            font-family: 'Archivo', sans-serif;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .editorial-grid {
-            border-top: 1px solid var(--rule);
-            border-bottom: 1px solid var(--rule);
-        }
-        .grid-line-b {
-            border-bottom: 1px solid var(--rule);
-        }
-        .grid-line-r {
-            border-right: 1px solid var(--rule);
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f2efe8">
+<title>PROJECT :: CURRENT — An Open Call</title>
+<meta name="description" content="An open invitation to help young people discover what they can do. Explore our Santa Clarita pilot, funding transparency, and participatory ways in.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg: #f2efe8;
+  --ink: #0e0e0e;
+  --muted: #605c55;
+  --rule: #c9c4b9;
+  --paper: #f8f6f1;
+  --cyan: #00a6de;
+  --lime: #c9f227;
+  --fuchsia: #e6007e;
+  --orange: #ff5500;
+  --font-display: 'Anton', Impact, sans-serif;
+  --font-sans: 'Archivo', sans-serif;
+  --font-hand: 'Caveat', cursive;
+}
+[data-theme="dark"]{
+  --bg: #10100f;
+  --ink: #f2efe8;
+  --muted: #b3ada3;
+  --rule: #353430;
+  --paper: #181817;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;transition:background 0.3s ease, color 0.3s ease}
+
+/* Vibrant Energy Gradient Header Stripe */
+.energy-stripe{
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--cyan), var(--lime), var(--orange), var(--fuchsia));
+}
+
+/* Header */
+.site-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:24px 40px;
+  border-bottom:1px solid var(--rule);
+  position:sticky;
+  top:0;
+  background:var(--bg);
+  z-index:100;
+}
+.wordmark{font-family:var(--font-display);font-size:24px;letter-spacing:1px;text-decoration:none;color:var(--ink)}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{text-decoration:none;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink)}
+.nav-links a:hover{color:var(--cyan)}
+.mode-toggle{background:none;border:1px solid var(--rule);padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer;color:var(--ink);border-radius:4px}
+.mode-toggle:hover{border-color:var(--ink)}
+
+/* Hero Section */
+.hero{
+  padding:80px 40px 60px 40px;
+  max-width:1400px;
+  margin:0 auto;
+  border-bottom:1px solid var(--rule);
+}
+.hero-tag{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:24px}
+.hero-title{font-family:var(--font-display);font-size:clamp(56px,8vw,120px);line-height:0.95;text-transform:uppercase;margin-bottom:32px;letter-spacing:-1px}
+.hero-subtitle{font-size:clamp(18px,2vw,24px);line-height:1.4;max-width:800px;color:var(--muted);margin-bottom:48px}
+
+/* Hero Grid */
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+.hero-img-card{
+  background:var(--paper);
+  border:1px solid var(--rule);
+  overflow:hidden;
+  position:relative;
+}
+.hero-img-card img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  display:block;
+}
+.img-caption{
+  padding:16px 24px;
+  font-size:12px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  border-top:1px solid var(--rule);
+  display:flex;
+  justify-content:space-between;
+  color:var(--muted);
+}
+
+.hero-content-card{
+  background:var(--paper);
+  border:1px solid var(--rule);
+  padding:48px;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.card-kicker{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:16px}
+.card-title{font-family:var(--font-display);font-size:42px;line-height:1;text-transform:uppercase;margin-bottom:24px}
+.card-text{font-size:16px;line-height:1.5;color:var(--muted);margin-bottom:32px}
+.handwritten{font-family:var(--font-hand);font-size:32px;color:var(--fuchsia);transform:rotate(-2deg);display:inline-block}
+
+/* Section Styling */
+.section{padding:80px 40px;max-width:1400px;margin:0 auto;border-bottom:1px solid var(--rule)}
+.section-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px}
+.section-title{font-family:var(--font-display);font-size:clamp(40px,6vw,80px);text-transform:uppercase;line-height:1}
+.section-tag{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+
+/* Funding Grid */
+.funding-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:900px){.funding-grid{grid-template-columns:1fr}}
+
+.metric-box{
+  background:var(--paper);
+  border:1px solid var(--rule);
+  padding:40px;
+}
+.metric-val{font-family:var(--font-display);font-size:64px;line-height:1;margin-bottom:8px;color:var(--cyan)}
+.metric-label{font-size:14px;color:var(--muted);margin-bottom:24px}
+.progress-bar{background:var(--rule);height:8px;width:100%;border-radius:4px;overflow:hidden;margin-bottom:16px}
+.progress-fill{background:var(--cyan);height:100%;width:21%}
+.progress-meta{display:flex;justify-content:space-between;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;color:var(--muted)}
+
+.allocation-table{background:var(--paper);border:1px solid var(--rule)}
+.alloc-row{display:flex;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--rule);font-size:15px;font-weight:500}
+.alloc-row:last-child{border-bottom:none}
+.alloc-target{font-family:var(--font-display);font-size:18px;color:var(--muted)}
+
+/* Footer */
+.footer{padding:60px 40px;text-align:center;font-size:13px;color:var(--muted);border-top:1px solid var(--rule)}
+</style>
 </head>
-<body class="selection:bg-ink selection:text-bg">
+<body>
 
-    <!-- SKIP LINK -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-ink focus:text-bg z-50">Skip to content</a>
+<div class="energy-stripe"></div>
 
-    <!-- SITE HEADER -->
-    <header class="sticky top-0 z-40 bg-bg/90 backdrop-blur-md border-b border-rule">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#top" class="font-display text-2xl md:text-3xl tracking-wider uppercase">PROJECT :: CURRENT</a>
-            <div class="flex items-center gap-6">
-                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide uppercase">
-                    <a href="#purpose" class="hover:text-muted transition-colors">Purpose</a>
-                    <a href="#floor" class="hover:text-muted transition-colors">$25K Floor</a>
-                    <a href="#ways-in" class="hover:text-muted transition-colors">Ways In</a>
-                    <a href="#status" class="hover:text-muted transition-colors">Open Status</a>
-                </nav>
-                <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2.5 rounded-full border border-rule hover:border-ink transition-all flex items-center justify-center">
-                    <svg id="theme-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                    </svg>
-                </button>
-            </div>
+<header class="site-head">
+  <a href="#" class="wordmark">PROJECT :: CURRENT</a>
+  <nav class="nav-links">
+    <a href="#purpose">Purpose</a>
+    <a href="#floor">$25K Floor</a>
+    <a href="#ways-in">Ways In</a>
+    <button class="mode-toggle" id="modeBtn" onclick="toggleMode()">Light Mode</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-tag">An Open Call · Santa Clarita · Pilot Planned for July 2027</div>
+    <h1 class="hero-title">The future is human made.</h1>
+    <p class="hero-subtitle">Young people deserve the chance to try, make, solve, and learn alongside people who know the work. That first experience can change what they believe is possible.</p>
+    
+    <div class="hero-grid">
+      <div class="hero-img-card">
+        <img src="PROJECT_CURRENT_Mentorship_UHD_3840x2160.jpg" alt="A skilled-work mentor guiding a young person using a drill at an outdoor workshop in golden-hour light">
+        <div class="img-caption">
+          <span>Real People</span>
+          <span>Real Work</span>
         </div>
-    </header>
-
-    <main id="main" class="max-w-7xl mx-auto px-6">
-
-        <!-- HERO SECTION -->
-        <section id="top" class="py-16 md:py-24 text-center border-b border-rule">
-            <div class="inline-block text-xs uppercase tracking-widest font-semibold px-3 py-1 mb-6 border border-rule rounded-full">
-                An Open Call • Santa Clarita • Pilot Planned for July 2027
-            </div>
-            <h1 class="font-display text-6xl sm:text-7xl md:text-9xl tracking-tight uppercase leading-none mb-8">
-                The Future is<br>Human Made.
-            </h1>
-            <p class="max-w-2xl mx-auto text-lg md:text-xl text-muted font-normal leading-relaxed mb-10">
-                Help young people discover what they can do through real encounters with skilled work. That first experience can change what they believe is possible.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#floor" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-ink text-bg font-semibold uppercase tracking-wider rounded-none hover:bg-muted transition-colors">
-                    Explore the First $25,000 ↗
-                </a>
-                <a href="#ways-in" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 border border-ink text-ink font-semibold uppercase tracking-wider rounded-none hover:bg-ink hover:text-bg transition-colors">
-                    Get Involved
-                </a>
-            </div>
-        </section>
-
-        <!-- PURPOSE & LIFESTYLE IMAGE SECTION -->
-        <section id="purpose" class="py-20 border-b border-rule">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="font-display text-4xl md:text-6xl uppercase tracking-tight mb-6">Potential Meets Possibility.</h2>
-                <p class="text-lg text-muted leading-relaxed">
-                    Young people deserve the chance to try, make, solve, and learn alongside people who know the work. That first experience can change what they believe is possible.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="relative aspect-[4/3] bg-paper border border-rule overflow-hidden shadow-sm">
-                    <!-- Correct root image filename pointing directly to uploaded JPEG asset -->
-                    <img src="PROJECT_CURRENT_Mentorship_UHD_3840x2160.jpg" alt="A skilled-work mentor guiding a young person using a drill at an outdoor workshop in golden-hour light" class="w-full h-full object-cover">
-                    <div class="absolute bottom-4 left-4 bg-bg/90 backdrop-blur-sm px-3 py-1 text-xs font-mono uppercase border border-rule">
-                        Real People · Real Work
-                    </div>
-                </div>
-
-                <div class="bg-paper p-8 md:p-12 border border-rule h-full flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs uppercase tracking-widest font-mono text-muted block mb-4">A First Encounter</span>
-                        <h3 class="font-display text-3xl md:text-5xl uppercase tracking-tight mb-6">Discover What You Can Do.</h3>
-                        <p class="text-muted leading-relaxed mb-6">
-                            We are building a local skilled-work discovery pilot where curiosity becomes practice, practice becomes confidence, and confidence opens pathways.
-                        </p>
-                    </div>
-                    <div class="pt-6 border-t border-rule font-script text-3xl text-ink">
-                        Hands. Minds. Possibility.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- $25K FLOOR SECTION (FUNDING GOAL TRACKER) -->
-        <section id="floor" class="py-20 border-b border-rule">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <div class="lg:col-span-5">
-                    <span class="text-xs uppercase tracking-widest font-mono text-muted block mb-4">Funding Milestone</span>
-                    <h2 class="font-display text-4xl md:text-6xl uppercase tracking-tight mb-6">The $25,000 Floor.</h2>
-                    <p class="text-muted leading-relaxed mb-6">
-                        Transparent capital allocation to fund the physical infrastructure, safety gear, initial toolkits, and mentor stipends for our Santa Clarita pilot.
-                    </p>
-                    <div class="p-6 bg-paper border border-rule">
-                        <div class="text-3xl font-display uppercase mb-1">$5,250 <span class="text-sm font-sans text-muted font-normal">/ $25,000 Raised</span></div>
-                        <div class="w-full bg-rule h-2 mt-3 overflow-hidden">
-                            <div class="bg-ink h-full w-[21%] transition-all duration-1000"></div>
-                        </div>
-                        <div class="text-xs font-mono uppercase text-muted mt-2">21% Funded • Updated October 2026</div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 flex flex-col justify-center">
-                    <div class="border border-rule overflow-hidden">
-                        <div class="bg-paper px-6 py-4 border-b border-rule font-mono text-xs uppercase tracking-wider flex justify-between">
-                            <span>Allocation Index</span>
-                            <span>Target %</span>
-                        </div>
-                        <div class="divide-y divide-rule font-mono text-sm">
-                            <div class="px-6 py-4 flex justify-between items-center bg-bg">
-                                <span>01 // Space Lease & Setup</span>
-                                <span class="font-bold">40%</span>
-                            </div>
-                            <div class="px-6 py-4 flex justify-between items-center bg-bg">
-                                <span>02 // Professional Grade Tooling & PPE</span>
-                                <span class="font-bold">30%</span>
-                            </div>
-                            <div class="px-6 py-4 flex justify-between items-center bg-bg">
-                                <span>03 // Mentor Stipends & Curriculum</span>
-                                <span class="font-bold">20%</span>
-                            </div>
-                            <div class="px-6 py-4 flex justify-between items-center bg-bg">
-                                <span>04 // Community Launch & Outreach</span>
-                                <span class="font-bold">10%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WAYS IN SECTION -->
-        <section id="ways-in" class="py-20 border-b border-rule">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs uppercase tracking-widest font-mono text-muted block mb-4">Participation</span>
-                <h2 class="font-display text-4xl md:text-6xl uppercase tracking-tight mb-4">Ways In.</h2>
-                <p class="text-muted">How you can support, mentor, or collaborate with Project Current.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-8 bg-paper border border-rule flex flex-col justify-between hover:border-ink transition-all">
-                    <div>
-                        <span class="text-xs font-mono text-muted block mb-4">01 // CAPITAL</span>
-                        <h3 class="font-display text-2xl uppercase mb-3">Fund the Floor</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Contribute directly to our $25K milestone to lock in our physical workshop location.</p>
-                    </div>
-                    <a href="#contact" class="inline-flex items-center text-xs font-bold uppercase tracking-wider hover:underline">Contribute Funds ↗</a>
-                </div>
-
-                <div class="p-8 bg-paper border border-rule flex flex-col justify-between hover:border-ink transition-all">
-                    <div>
-                        <span class="text-xs font-mono text-muted block mb-4">02 // EXPERTISE</span>
-                        <h3 class="font-display text-2xl uppercase mb-3">Become a Mentor</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Are you a builder, fabricator, or maker? Share your craft with local youth.</p>
-                    </div>
-                    <a href="#contact" class="inline-flex items-center text-xs font-bold uppercase tracking-wider hover:underline">Apply as Mentor ↗</a>
-                </div>
-
-                <div class="p-8 bg-paper border border-rule flex flex-col justify-between hover:border-ink transition-all">
-                    <div>
-                        <span class="text-xs font-mono text-muted block mb-4">03 // SPACE</span>
-                        <h3 class="font-display text-2xl uppercase mb-3">Partner & Host</h3>
-                        <p class="text-muted text-sm leading-relaxed mb-6">Help us source physical workshop space or donate industrial tools and materials.</p>
-                    </div>
-                    <a href="#contact" class="inline-flex items-center text-xs font-bold uppercase tracking-wider hover:underline">Connect Space ↗</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- OPEN STATUS SECTION -->
-        <section id="status" class="py-20 border-b border-rule">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="text-xs uppercase tracking-widest font-mono text-muted block mb-4">Transparency</span>
-                    <h2 class="font-display text-4xl md:text-5xl uppercase tracking-tight mb-6">Open Status.</h2>
-                    <p class="text-muted leading-relaxed mb-6">
-                        We publish weekly updates, milestone metrics, and capital expenditures openly. No corporate opacity—just direct civic progress.
-                    </p>
-                    <div class="inline-flex items-center gap-3 px-4 py-2 border border-rule bg-paper text-xs font-mono uppercase">
-                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                        System Online: Live on Vercel & Porkbun DNS
-                    </div>
-                </div>
-                <div class="border border-rule p-8 bg-paper">
-                    <h3 class="font-display text-xl uppercase mb-4">Current Milestone Tracker</h3>
-                    <ul class="space-y-4 font-mono text-xs md:text-sm">
-                        <li class="flex justify-between pb-3 border-b border-rule">
-                            <span>Domain Verified (`projectcurrent.org`)</span>
-                            <span class="text-emerald-600 font-bold">DONE</span>
-                        </li>
-                        <li class="flex justify-between pb-3 border-b border-rule">
-                            <span>GitHub & Vercel Pipeline CI/CD</span>
-                            <span class="text-emerald-600 font-bold">DONE</span>
-                        </li>
-                        <li class="flex justify-between pb-3 border-b border-rule">
-                            <span>Mentorship Asset Integration</span>
-                            <span class="text-emerald-600 font-bold">DONE</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span>$25K Fundraising Campaign Launch</span>
-                            <span class="text-amber-600 font-bold">IN PROGRESS</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT & NEWSLETTER SECTION -->
-        <section id="contact" class="py-20">
-            <div class="max-w-2xl mx-auto text-center">
-                <span class="text-xs uppercase tracking-widest font-mono text-muted block mb-4">Stay Informed</span>
-                <h2 class="font-display text-4xl md:text-5xl uppercase tracking-tight mb-6">Join the Dispatch.</h2>
-                <p class="text-muted mb-8">Receive periodic updates as we build toward our July 2027 pilot launch in Santa Clarita.</p>
-                <form onsubmit="event.preventDefault(); showToast('Thank you for subscribing to Project Current.');" class="flex flex-col sm:flex-row gap-3">
-                    <input type="email" placeholder="Enter your email address" required class="flex-1 px-4 py-3.5 bg-paper border border-rule text-ink placeholder:text-muted focus:outline-none focus:border-ink rounded-none">
-                    <button type="submit" class="px-8 py-3.5 bg-ink text-bg font-semibold uppercase tracking-wider hover:bg-muted transition-colors rounded-none">
-                        Subscribe
-                    </button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="border-t border-rule bg-paper">
-        <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="font-display text-lg tracking-wider uppercase">PROJECT :: CURRENT</div>
-            <div class="text-xs font-mono text-muted">© 2026 PROJECT CURRENT. All rights reserved. Open civic transparency initiative.</div>
-            <div class="flex items-center gap-6 text-xs font-mono uppercase">
-                <a href="#top" class="hover:underline">Back to top ↑</a>
-            </div>
+      </div>
+      
+      <div class="hero-content-card">
+        <div>
+          <div class="card-kicker">A First Encounter</div>
+          <h2 class="card-title">Discover what you can do.</h2>
+          <p class="card-text">We are building a local skilled-work discovery pilot where curiosity becomes practice, practice becomes confidence, and confidence opens pathways.</p>
         </div>
-    </footer>
-
-    <!-- TOAST NOTIFICATION BOX (NO ALERT/CONFIRM) -->
-    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 bg-ink text-bg px-6 py-4 shadow-lg border border-rule font-mono text-xs uppercase tracking-wider flex items-center gap-3">
-        <span id="toast-msg">Notification</span>
+        <div class="handwritten">Hands. Minds. Possibility.</div>
+      </div>
     </div>
+  </section>
 
-    <!-- JAVASCRIPT LOGIC -->
-    <script>
-        // Theme Toggle Functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement;
-        
-        // Check saved theme or system preference
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        htmlElement.setAttribute('data-theme', savedTheme);
-        if (savedTheme === 'dark') {
-            htmlElement.classList.add('dark');
-        }
+  <section class="section" id="floor">
+    <div class="section-header">
+      <h2 class="section-title">The $25,000 Floor.</h2>
+      <div class="section-tag">Funding Milestone</div>
+    </div>
+    
+    <div class="funding-grid">
+      <div class="metric-box">
+        <div class="metric-val">$5,250</div>
+        <div class="metric-label">/ $25,000 Raised</div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="progress-meta">
+          <span>21% Funded</span>
+          <span>Updated October 2026</span>
+        </div>
+      </div>
 
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            if (newTheme === 'dark') {
-                htmlElement.classList.add('dark');
-            } else {
-                htmlElement.classList.remove('dark');
-            }
-        });
+      <div class="allocation-table">
+        <div class="alloc-row" style="background:var(--bg);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted)">
+          <span>Allocation Index</span>
+          <span>Target %</span>
+        </div>
+        <div class="alloc-row">
+          <span>01 // Space Lease & Setup</span>
+          <span class="alloc-target">40%</span>
+        </div>
+        <div class="alloc-row">
+          <span>02 // Professional Grade Tooling & PPE</span>
+          <span class="alloc-target">30%</span>
+        </div>
+        <div class="alloc-row">
+          <span>03 // Mentor Stipends & Curriculum</span>
+          <span class="alloc-target">20%</span>
+        </div>
+        <div class="alloc-row">
+          <span>04 // Community Launch & Outreach</span>
+          <span class="alloc-target">10%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-        // Custom Toast Message Box (Replacing alert/confirm)
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            const toastMsg = document.getElementById('toast-msg');
-            toastMsg.textContent = message;
-            toast.classList.remove('translate-y-32', 'opacity-0');
-            toast.classList.add('translate-y-0', 'opacity-100');
-            
-            setTimeout(() => {
-                toast.classList.remove('translate-y-0', 'opacity-100');
-                toast.classList.add('translate-y-32', 'opacity-0');
-            }, 4000);
-        }
-    </script>
+<footer class="footer">
+  <p>© 2026 PROJECT :: CURRENT · Santa Clarita, California · All rights reserved.</p>
+</footer>
+
+<script>
+function toggleMode(){
+  const html = document.documentElement;
+  const btn = document.getElementById('modeBtn');
+  if(html.getAttribute('data-theme')==='light'){
+    html.setAttribute('data-theme','dark');
+    btn.textContent = 'Dark Mode';
+  } else {
+    html.setAttribute('data-theme','light');
+    btn.textContent = 'Light Mode';
+  }
+}
+</script>
 </body>
 </html>
